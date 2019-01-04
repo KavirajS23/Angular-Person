@@ -1,0 +1,6 @@
+<div class="row list-container">
+  <app-person-list-panel (selectedItem)="onSelectListItem($event)"></app-person-list-panel>
+</div>
+<div class="row info-container">
+  <app-person-info-panel [selectedListItem]="selectedListItem"></app-person-info-panel>
+</div>

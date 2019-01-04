@@ -1,0 +1,142 @@
+[
+    {
+    "SNO": 1,
+    "firstName": "George",
+    "lastName": "Riley",
+    "email": "jeff@cherry.cg",
+    "isAdmin": true
+    },
+    {
+    "SNO": 2,
+    "firstName": "Ricky",
+    "lastName": "Bowling",
+    "email": "charles@gunter.pm",
+    "isAdmin": false
+    },
+    {
+    "SNO": 3,
+    "firstName": "Luis",
+    "lastName": "Dunn",
+    "email": "allison@finch.net",
+    "isAdmin": true
+    },
+    {
+    "SNO": 4,
+    "firstName": "Dorothy",
+    "lastName": "Gould",
+    "email": "lorraine@herbert.is",
+    "isAdmin": false
+    },
+    {
+    "SNO": 5,
+    "firstName": "Sidney",
+    "lastName": "Barton",
+    "email": "pauline@matthews.hk",
+    "isAdmin": false
+    },
+    {
+    "SNO": 6,
+    "firstName": "Christine",
+    "lastName": "Norman",
+    "email": "diana@glover.ki",
+    "isAdmin": false
+    },
+    {
+    "SNO": 7,
+    "firstName": "Lynne",
+    "lastName": "Henson",
+    "email": "dana@padgett.ge",
+    "isAdmin": false
+    },
+    {
+    "SNO": 8,
+    "firstName": "Timothy",
+    "lastName": "Lutz",
+    "email": "marshall@lam.bb",
+    "isAdmin": true
+    },
+    {
+    "SNO": 9,
+    "firstName": "Gayle",
+    "lastName": "Finch",
+    "email": "glenn@walton.lr",
+    "isAdmin": false
+    },
+    {
+    "SNO": 10,
+    "firstName": "Benjamin",
+    "lastName": "Knowles",
+    "email": "kay@singleton.mn",
+    "isAdmin": false
+    },
+    {
+    "SNO": 11,
+    "firstName": "William",
+    "lastName": "Foster",
+    "email": "marc@bolton.gi",
+    "isAdmin": true
+    },
+    {
+    "SNO": 12,
+    "firstName": "Bruce",
+    "lastName": "McKenzie",
+    "email": "jordan@carver.ax",
+    "isAdmin": false
+    },
+    {
+    "SNO": 13,
+    "firstName": "Stephen",
+    "lastName": "Harmon",
+    "email": "nina@james.bj",
+    "isAdmin": true
+    },
+    {
+    "SNO": 14,
+    "firstName": "Melinda",
+    "lastName": "Watson",
+    "email": "shawn@cooke.gn",
+    "isAdmin": true
+    },
+    {
+    "SNO": 15,
+    "firstName": "Sandra",
+    "lastName": "Rice",
+    "email": "kyle@dalton.im",
+    "isAdmin": false
+    },
+    {
+    "SNO": 16,
+    "firstName": "Renee",
+    "lastName": "Ellis",
+    "email": "craig@hess.ir",
+    "isAdmin": true
+    },
+    {
+    "SNO": 17,
+    "firstName": "Renee",
+    "lastName": "Jennings",
+    "email": "theodore@beach.tm",
+    "isAdmin": false
+    },
+    {
+    "SNO": 18,
+    "firstName": "Warren",
+    "lastName": "Sinclair",
+    "email": "julie@solomon.ar",
+    "isAdmin": false
+    },
+    {
+    "SNO": 19,
+    "firstName": "Joan",
+    "lastName": "Richards",
+    "email": "barbara@chappell.gq",
+    "isAdmin": false
+    },
+    {
+    "SNO": 20,
+    "firstName": "Michelle",
+    "lastName": "Mills",
+    "email": "sharon@waller.gu",
+    "isAdmin": false
+    }
+]

@@ -1,0 +1,23 @@
+.lsp-container {
+    width: 20%;
+}
+.person-panel {
+    width: 80%;
+}
+table {
+    display: table;
+}
+.row {
+    margin: 10px;
+}
+button {
+    width: auto;
+    text-overflow: ellipsis;
+}
+.list-container {
+    height: 50%;
+    width: 100%; 
+}
+td {
+    cursor: pointer;
+}
