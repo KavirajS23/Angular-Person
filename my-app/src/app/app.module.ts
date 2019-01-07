@@ -11,6 +11,7 @@ import { PersonInfoPanelComponent } from './person-panel/person-info-panel/perso
 import { AddressInfoPanelComponent } from './address-panel/address-info-panel/address-info-panel.component';
 import { AddressListPanelComponent } from './address-panel/address-list-panel/address-list-panel.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+// import { PersonService } from './person-panel/person.service';
 
 @NgModule({
   declarations: [

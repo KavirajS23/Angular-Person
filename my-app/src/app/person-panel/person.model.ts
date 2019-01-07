@@ -4,6 +4,6 @@ export class PersonModel {
     lastName: string;
     email: string;
     isAdmin: any;
-    
+
     constructor() {}
 }

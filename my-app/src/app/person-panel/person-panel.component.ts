@@ -1,19 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
+import { PersonService } from './person.service';
+
 
 @Component({
-  selector: 'app-person-panel',
-  templateUrl: './person-panel.component.html',
-  styleUrls: ['./person-panel.component.css']
+    selector: 'app-person-panel',
+    templateUrl: './person-panel.component.html',
+    styleUrls: ['./person-panel.component.css'],
+    providers: [PersonService]
 })
 export class PersonPanelComponent implements OnInit {
-  selectedListItem: any;
-  isAddSelected: string;
-  constructor() { }
 
-  ngOnInit() {
-  }
+    constructor(private personService: PersonService) { }
 
-  onSelectListItem(item) {
-    this.selectedListItem = item;
-  }
+    ngOnInit() {
+
+    }
+
 }
