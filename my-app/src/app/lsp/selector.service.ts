@@ -1,11 +1,7 @@
 import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable()
-export class PersonService {
+export class SelectorService {
     selectedListItem = new EventEmitter<any>();
     constructor() { }
-
-    onSelectListItem(item) {
-        this.selectedListItem = item;
-    }
 }

@@ -1,9 +1,10 @@
 export class PersonModel {
-    SNO: any;
+    id: any;
     firstName: string;
     lastName: string;
     email: string;
-    isAdmin: any;
+    birthDate: string;
+    admin: any;
 
     constructor() {}
 }

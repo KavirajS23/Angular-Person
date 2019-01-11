@@ -1,21 +1,16 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { SelectorService } from './selector.service';
 
 @Component({
   selector: 'app-lsp',
   templateUrl: './lsp.component.html',
-  styleUrls: ['./lsp.component.css']
+  styleUrls: ['./lsp.component.css'],
+  providers: [SelectorService]
 })
 export class LspComponent implements OnInit {
-  entitySelected: string;
-  @Output() valueChange = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  onEntitySelect(entity: string) {
-    this.entitySelected = entity;
-    this.valueChange.emit(this.entitySelected);
   }
 }

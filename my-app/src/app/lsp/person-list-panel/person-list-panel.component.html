@@ -1,0 +1,26 @@
+<div class="list-container">
+  <table class="table table-bordered pre-scrollable">
+    <thead>
+      <tr>
+        <th *ngFor="let meta of entityMetaData">{{ meta }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of entityActualData" [routerLink]="[item.id]" routerLinkActive="active" >
+        <td>{{ item.id }}</td>
+        <td>{{ item.firstName }}</td>
+        <td>{{ item.lastName }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.birthDate }}</td>
+        <td>{{ item.admin }}</td>
+        <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr/>
+<button type="button" class="btn btn-outline-success" [routerLink]="['new']">Add</button>
+<hr/>
+<div class="info-container">
+  <router-outlet></router-outlet>
+</div>

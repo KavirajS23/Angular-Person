@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public selectedEntity: string = 'person';
+  public selectedEntity = 'person';
 
   entitySelected(event) {
     this.selectedEntity = event;

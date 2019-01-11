@@ -1,0 +1,32 @@
+[
+  {
+    "SNO": 1,
+    "street": "Main street",
+    "city": "Chennai",
+    "postalCode": "629102"
+  },
+  {
+    "SNO": 2,
+    "street": "Reddy street",
+    "city": "Banglore",
+    "postalCode": "563273"
+  },
+  {
+    "SNO": 3,
+    "street": "Kambar street",
+    "city": "Chennai",
+    "postalCode": "642538"
+  },
+  {
+    "SNO": 4,
+    "street": "Thiruvalluvar street",
+    "city": "Madurai",
+    "postalCode": "543789"
+  },
+  {
+    "SNO": 5,
+    "street": "Anna Colony",
+    "city": "Tiruppur",
+    "postalCode": "638103"
+  }
+]

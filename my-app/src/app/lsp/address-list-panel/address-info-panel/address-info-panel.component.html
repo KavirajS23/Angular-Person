@@ -1,0 +1,15 @@
+<div class="fields-container">
+  <div class="form-group">
+    <input type="number" class="form-control" disabled [(ngModel)]="addressObj.id">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Enter Street" [(ngModel)]="addressObj.street">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Enter City" [(ngModel)]="addressObj.city">
+  </div>
+  <div class="form-group">
+    <input type="number" class="form-control" placeholder="Enter Postal code" [(ngModel)]="addressObj.postalCode">
+  </div>
+  <button type="submit" class="btn btn-outline-secondary" (click)="onSubmit()">Submit</button>
+</div>

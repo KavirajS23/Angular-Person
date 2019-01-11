@@ -1,6 +1,6 @@
-
+<div class="fields-container">
   <div class="form-group">
-    <input type="text" class="form-control" disabled name="email" [(ngModel)]="personObj.SNO">
+    <input type="text" class="form-control" disabled name="email" [(ngModel)]="personObj.id">
   </div>
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Enter Firstname" [(ngModel)]="personObj.firstName">
@@ -12,7 +12,10 @@
     <input type="text" class="form-control" placeholder="Enter Email" [(ngModel)]="personObj.email">
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="is admin?" [(ngModel)]="personObj.isAdmin">
+    <input type="text" class="form-control" placeholder="Enter Date of birth" [(ngModel)]="personObj.birthDate">
   </div>
-  <button type="submit" class="btn btn-outline-primary">Submit</button>
-
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="is admin?" [(ngModel)]="personObj.admin">
+  </div>
+  <button type="submit" class="btn btn-outline-primary" (click)="onSubmit()">Submit</button>
+</div>
