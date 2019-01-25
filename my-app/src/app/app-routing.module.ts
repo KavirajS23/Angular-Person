@@ -1,22 +1,23 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LspComponent } from './lsp/lsp.component';
 import { PersonListPanelComponent } from './lsp/person-list-panel/person-list-panel.component';
-import { AddressListPanelComponent } from './lsp/address-list-panel/address-list-panel.component';
-import { PersonInfoPanelComponent } from './lsp/person-list-panel/person-info-panel/person-info-panel.component';
-import { AddressInfoPanelComponent } from './lsp/address-list-panel/address-info-panel/address-info-panel.component';
+import { PersonModule } from './lsp/person-list-panel/person.module';
+
 
 const routes: Routes = [
   { path: '', component: LspComponent, children: [
-      { path: 'person', component: PersonListPanelComponent, children: [
-          { path: 'new', component: PersonInfoPanelComponent },
-          { path: ':id', component: PersonInfoPanelComponent }
-      ] },
-      { path: 'address', component: AddressListPanelComponent, children: [
-          { path: 'new', component: AddressInfoPanelComponent },
-          { path: ':id', component: AddressInfoPanelComponent }
-      ] }
-  ] }
+    { path: 'person', loadChildren: './lsp/person-list-panel/person.module#PersonModule' },
+    { path: 'address', loadChildren: './lsp/address-list-panel/address.module#AddressModule' }
+  ]}
+      // { path: 'person', component: PersonListPanelComponent, children: [
+      //   { path: 'new', component: PersonInfoPanelComponent },
+      //   { path: ':id', component: PersonInfoPanelComponent }
+      // ] },
+      // { path: 'address', component: AddressListPanelComponent, children: [
+      //     { path: 'new', component: AddressInfoPanelComponent },
+      //     { path: ':id', component: AddressInfoPanelComponent }
+      // ] }
 ];
 
 @NgModule({

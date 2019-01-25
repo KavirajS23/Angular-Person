@@ -13,14 +13,14 @@ export class AddressService implements OnInit {
   }
 
   get(id: number): any {
-    return this.http.get('http://192.168.20.144:8080/ws/do/address?id=' + id);
+    return this.http.get('http://192.168.2.151:8080/ws/do/address?id=' + id);
   }
 
   getList(): Observable<any> {
-    return this.http.get('http://192.168.20.144:8080/ws/do/address');
+    return this.http.get('http://192.168.2.151:8080/ws/do/address');
   }
 
   create(address: AddressModel) {
-    return this.http.put('http://192.168.20.144:8080/ws/do/address', address);
+    return this.http.put('http://192.168.2.151:8080/ws/do/address', address);
   }
 }

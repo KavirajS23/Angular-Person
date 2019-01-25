@@ -12,7 +12,7 @@ export class PersonListPanelComponent implements OnInit {
     entityMetaData: string[] = ['ID', 'Firstname', 'Lastname', 'Email', 'Birth Date', 'Admin', 'Delete?'];
     entityActualData: PersonModel[];
     newPerson = new PersonModel();
-    isSubmitSelect = false;
+    url: string;
     constructor(private personService: PersonService,
                 private route: ActivatedRoute,
                 private router: Router) {
@@ -25,7 +25,6 @@ export class PersonListPanelComponent implements OnInit {
         .subscribe(
           (response) => {
             this.newPerson = <PersonModel>response;
-            this.isSubmitSelect = true;
             this.getPersonList();
           }
         );
@@ -35,12 +34,13 @@ export class PersonListPanelComponent implements OnInit {
       this.personService.getPersonList()
         .subscribe(data => {
           this.entityActualData = <PersonModel[]>data;
-          if (!this.newPerson === undefined) {
-            this.router.navigate([this.entityActualData[0].id], {relativeTo: this.route});
-          } else {
+          this.url = this.router.url;
+          console.log(this.url);
+          if (this.newPerson === undefined) {
             this.router.navigate([this.newPerson.id], {relativeTo: this.route});
+          } else {
+            this.router.navigate([this.entityActualData[0].id], {relativeTo: this.route});
           }
-
       });
     }
 }

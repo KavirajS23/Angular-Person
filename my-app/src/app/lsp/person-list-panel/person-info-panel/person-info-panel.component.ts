@@ -1,9 +1,10 @@
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy, ViewChild } from '@angular/core';
 
 import { PersonModel } from '../../person.model';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { PersonService } from 'src/app/person.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
     selector: 'app-person-info-panel',
@@ -12,6 +13,7 @@ import { PersonService } from 'src/app/person.service';
 })
 export class PersonInfoPanelComponent implements OnInit, OnDestroy {
 
+    @ViewChild('f') formData: NgForm;
     personObj = new PersonModel();
     paramsSubscription: Subscription;
     selectedListItemId: number;
@@ -51,6 +53,10 @@ export class PersonInfoPanelComponent implements OnInit, OnDestroy {
             this.personService.submitedPerson.next(response);
           }
         );
+    }
+
+    onFormSubmit() {
+      console.log(this.formData);
     }
 
     ngOnDestroy() {

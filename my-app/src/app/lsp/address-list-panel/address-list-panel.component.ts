@@ -35,7 +35,7 @@ export class AddressListPanelComponent implements OnInit {
     this.addressService.getList()
       .subscribe(data => {
         this.entityActualData = <AddressModel[]>data;
-        if (this.newAddress) {
+        if (this.newAddress === undefined) {
           this.router.navigate([this.newAddress.id], {relativeTo: this.route});
         } else {
           this.router.navigate([this.entityActualData[0].id], {relativeTo: this.route});

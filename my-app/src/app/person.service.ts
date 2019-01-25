@@ -14,14 +14,14 @@ export class PersonService implements OnInit {
   }
 
   getPerson(id: number): any {
-    return this.http.get('http://192.168.20.144:8080/ws/do/person?id=' + id);
+    return this.http.get('http://192.168.2.151:8080/ws/do/person?id=' + id);
   }
 
   getPersonList(): Observable<any> {
-    return this.http.get('http://192.168.20.144:8080/ws/do/person');
+    return this.http.get('http://192.168.2.151:8080/ws/do/person');
   }
 
   createPerson(person: PersonModel) {
-    return this.http.put('http://192.168.20.144:8080/ws/do/person', person);
+    return this.http.put('http://192.168.2.151:8080/ws/do/person', person);
   }
 }

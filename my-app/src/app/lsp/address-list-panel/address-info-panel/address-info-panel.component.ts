@@ -47,6 +47,7 @@ export class AddressInfoPanelComponent implements OnInit, OnDestroy {
       .subscribe(
         (response: AddressModel) => {
           this.addressService.submitedAddress.next(response);
+          console.log(response);
         }
       );
   }
