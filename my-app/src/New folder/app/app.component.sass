@@ -1,0 +1,138 @@
+body
+  background-color: #403A3E
+
+.header-wrapper
+  position: fixed
+  z-index: 999
+  width: 100%
+  height: 70px
+  top: 0px
+  left: 0px
+  background-color: #f7f7f7
+  box-shadow: 0px 0px 5px #CACFD2
+
+.header-brand
+  display: inline
+  position: absolute
+  width: 70px
+  height: 70px
+
+.logo
+  width: 50px
+  height: 50px
+  margin: 5px 5px 5px 5px
+
+.header-search
+  position: absolute
+  width: 40%
+  height: 50px
+  left: 20%
+  top: 10px
+
+  input
+    width: 70%
+    height: 20px
+    padding: 12px
+    border: none
+
+  button
+    display: inline
+    position: relative
+    width: 10%
+    height: 44px
+    border: none
+
+    &:hover
+      background-color: #00c7ec
+
+.header-notification
+  position: absolute
+  width: 150px
+  height: 50px
+  left: 90%
+  top: 10px
+
+  > span
+    display: inline
+    position: relative
+    top: 18px
+    margin: 15px
+    padding: 10px 10px
+    background-color: #fff
+    border-radius: 100%
+    border: 1px solid #333333
+
+  > span .badge
+    position: absolute
+    top: -7px
+    padding: 1px 5px
+    border-radius: 50%
+    background: red
+    color: white
+
+// .header-profile
+//   position: absolute
+//   width: 90px
+//   height: 50px
+//   left: 90%
+//   top: 10px
+
+//   i
+//     position: relative
+//     font-size: 32px
+//     color: #fff
+//     margin: 8px
+
+.main-container
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 70px
+  left: 0
+
+
+.caption
+  min-width: 50px
+  display: none
+  color: #fff
+
+.side-menu
+  width: 50px
+  height: 100%
+  top: 70px
+  left: 0px
+  position: fixed
+  background-color: #333333
+
+  &:hover
+    cursor: pointer
+    width: 120px
+    display: inline-block
+
+    .caption
+      display: inline
+
+      .main-container
+        left: 130px
+
+.side-menu-icons
+  position: absolute
+  display: inline
+  height: auto
+  left: 5%
+
+  i
+    display: inline-block
+    position: relative
+    font-size: 26px
+    color: #c3d2d2
+    padding: 5px
+
+  &:hover
+    color: #fff
+
+.content-section
+  position: absolute
+  height: 100%
+  top: 70px
+  left: 50px
